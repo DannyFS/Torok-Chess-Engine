@@ -1,0 +1,20 @@
+Daniel Sadrulah
+2/15/2024
+The Torok Chess Engine Project
+
+
+Project Proposal:
+- First we need to complete a working chess board representation with all rules applied correctly.
+- Finding the best move:
+  - Currently, this is the most challenging problem we need to face.
+  - Brute forcing: due to the complications of the shannon number, brute forcing requires a large amount of hardware and time to evaluate steps that can be achieved through various other methods.
+    This is not an ideal way to compute possible moves.
+  - Diving in head first into the future:
+    - To find the best move, we must dermine a lot of factors such as offense, defense, king's protection, pawn strcuture, winning positions, getting out of trouble, center control, etc.
+  - Opening and endgame: These steps have been done for us and we can implement these databases into our engine. This leaves us with ~10 opening half-moves
+    and checkmate opportunities using Syzygy Bases with 6 men (7 men available with 16.7TiB storage). Obviously having a secondary source of help throguh searching and evaluation will help with
+    keeping the game under control. This leaves us to do the dirty work in the middle game which is very critical. Having a solid opening will improve our chances at managing the middle game.
+- Hardware to use:
+  - Currently I have a desktop running Windows 10, an i5-4460 and 16GB ddr3 1600mhz memory. 
+  - Future hardware may require a 32+ core cpu, 1TB+ ddr4 ecc memory, and multiple nvidia tesla p100's.
+- Absolute goal: find the fastest way to achieve checkmate while maintaining strong defensive play.
