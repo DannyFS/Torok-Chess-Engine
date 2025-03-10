@@ -1,8 +1,8 @@
-# Python Chess Engine
+# Torok Chess Engine
 
 Overview
 
-This is a high-performance UCI-compatible chess engine written in Python, with an estimated Elo rating of 2400. It features highly optimized search algorithms, deep evaluation capabilities, and strong endgame play using Syzygy tablebases. The engine also includes a massive opening book, precomputed using Stockfish 17 on a powerful 8C/16-thread CPU with 128GB of memory.
+High-performance UCI-compatible chess engine written in Python, with an estimated Elo rating of 2400. It features highly optimized search algorithms, deep evaluation capabilities, and strong endgame play using Syzygy tablebases. The engine also includes a massive opening book, precomputed using Stockfish 17 on a powerful 8C/16-thread CPU with 128GB of memory.
 
 Features
 
